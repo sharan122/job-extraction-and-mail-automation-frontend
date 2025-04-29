@@ -8,6 +8,7 @@ const BaseURL = 'http://43.204.130.227'
 
 export const useRegister = () => {
   const navigate = useNavigate();
+  console.log("Auth API URL:", `${BASE_URL}/api/token/`);
 
   return useMutation({
     mutationFn: async (data) => {
